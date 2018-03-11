@@ -1,0 +1,5 @@
+<swiper [config]="config" [(index)]="index">
+  <div *ngFor="let favorite of favorites">
+    <a class="btn btn-info" role="button" (click)="onSelect(favorite)"><h4>{{favorite}}</h4></a>
+  </div>
+</swiper>

@@ -1,0 +1,8 @@
+<div class="container-fluid clearfix">
+  <a *ngFor="let preset of presets" class="col-1-4"
+    (click)="onSelect(preset)">
+    <div class="btn btn-info" role="button">
+      <h4>{{preset.prettyName}}</h4>
+    </div>
+  </a>
+</div>
