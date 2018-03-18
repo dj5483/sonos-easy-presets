@@ -1,8 +1,10 @@
-<div class="container-fluid clearfix">
-  <a *ngFor="let preset of presets" class="col-1-4"
-    (click)="onSelect(preset)">
-    <div class="btn btn-info" role="button">
-      <h4>{{preset.prettyName}}</h4>
+<div class="container-fluid clearfix mt-3">
+    <h2>Presets</h2>
+  <a *ngFor="let preset of presets" (click)="onSelect(preset)">
+    <div class="row mt-1">
+      <div class="btn-lg btn-info btn-block" role="button">
+        {{preset.prettyName}}
+      </div>
     </div>
   </a>
 </div>

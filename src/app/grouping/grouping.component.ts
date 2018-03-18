@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Group } from './group';
 import { GroupService } from './group.service';
 import { Player } from '../player/player';
+import { PLAYERS } from '../player/mock-players';
 
 @Component({
   selector: 'app-grouping',
@@ -14,7 +15,7 @@ export class GroupingComponent implements OnInit {
 
   selectedGroup: Group;
 
-  coordinator: Player = {id: 0, name: 'No coordinator defined'};
+  coordinator: Player = PLAYERS[0];
 
   constructor(private groupService: GroupService) { }
 
